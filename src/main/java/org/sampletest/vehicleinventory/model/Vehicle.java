@@ -35,11 +35,11 @@ public class Vehicle {
 	
 	private String description;
 	
-	public Vehicle(VehicleType type, String model, String make, Integer quntity, String desc) {
+	public Vehicle(VehicleType type, String model, String make, Integer quantity, String desc) {
 		this.vehicleType = type;
 		this.model = model;
 		this.make = make;
-		this.stockonHand = quntity;
+		this.stockonHand = quantity;
 		this.description = desc;
 	}
 	

@@ -35,13 +35,13 @@ public class VehicleController {
 	}
 
 	@GetMapping("/count/{vehicletype}")
-	public long getVehicleCount(@PathVariable String vehicletype){
+	public long getVehicleQuantity(@PathVariable String vehicletype){
 		// validate input is a valid vehicleTyp
 		VehicleType vtype = VehicleType.fromName(vehicletype);
 		if(null == vtype){
 			throw new InvalidInputException("vehicle type is not supported yet");
 		}
-		return vehicleRepository.countByVehicleType(vtype);
+		return vehicleRepository.quanityByVehicleType(vtype);
 	}
 	
 	/* get method for searching for a vehicle and inventory

@@ -16,8 +16,8 @@ public class Application {
 	 @Bean
 	 CommandLineRunner init(VehicleRepository repository) {
 	      return (args) -> {
-	    	  repository.save(new Vehicle(VehicleType.Car, "Honda", "Civic", 10, "Honda Civic LX 4 dr"));
-	    	  repository.save(new Vehicle(VehicleType.Car, "Toyota", "Camry", 10, "Toyota Camry LE 4 dr"));
+	    	  repository.save(new Vehicle(VehicleType.Car, "Honda", "Civic", 11, "Honda Civic LX 4 dr"));
+	    	  repository.save(new Vehicle(VehicleType.Car, "Toyota", "Camry", 12, "Toyota Camry LE 4 dr"));
 	    	  repository.save(new Vehicle(VehicleType.Truck, "Toyota", "Civic", 10, "Volvo Primer"));
 	    	  repository.save(new Vehicle(VehicleType.Truck, "GMC", "Civic", 10, "Ford 150"));
 	    	  repository.save(new Vehicle(VehicleType.Airplane, "Boeing", "777", 10, "Boeig 777 "));
